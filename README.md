@@ -1,5 +1,7 @@
 # nb_as_module
 
+`pip install nb_as_module`
+
 Load a Jupyter Notebook as a module object.
 
 E.g.
