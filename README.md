@@ -1,5 +1,7 @@
 # nb_as_module
 
+[![](https://github.com/sradc/nb_as_module/workflows/Python%20package/badge.svg)](https://github.com/sradc/nb_as_module/commits/)
+
 `pip install nb_as_module`
 
 Load a Jupyter Notebook as a module object.
