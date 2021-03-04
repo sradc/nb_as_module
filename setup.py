@@ -2,6 +2,9 @@ import pathlib
 import setuptools
 import nb_as_module
 
+requirements = pathlib.Path("requirements.txt").read_text()
+requirements = [r for r in requirements.split("\n") if r]
+
 setuptools.setup(
     name="nb_as_module",
     version=nb_as_module.__version__,
@@ -13,7 +16,7 @@ setuptools.setup(
     url="https://github.com/sradc/nb_as_module",
     license="BSD",
     packages=setuptools.find_packages(),
-    install_requires=["IPython", "nbformat"],
+    install_requires=requirements,
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
