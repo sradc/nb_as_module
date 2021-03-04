@@ -11,7 +11,7 @@ E.g.
 ```python
 from nb_as_module import nb_as_module
 
-my_module = nb_as_module('path/to/notebook.ipynb', name='my_module)
+my_module = nb_as_module('path/to/notebook.ipynb', name='my_module')
 
 my_module.hello()  # where `hello` is a function defined in the notebook.
 ```
