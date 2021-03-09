@@ -6,8 +6,6 @@
 
 Load a Jupyter Notebook as a module object.
 
-### Examples
-
 ```python
 from nb_as_module import nb_as_module
 
@@ -16,7 +14,11 @@ my_module = nb_as_module('path/to/notebook.ipynb', name='my_module')
 my_module.hello()  # where `hello` is a function defined in the notebook.
 ```
 
+### Google Colab
+
 There is also a helper module for Google Colab.
+
+To install in Google Colab, run in a cell: `!pip install nb_as_module`
 
 ```python
 import nb_as_module.colab
@@ -31,7 +33,7 @@ print(list_of_notebooks)
 #> ['hello.ipynb', ...]
 
 # Load one of the notebooks in the list, as a module:
-hello = as_module('hello.ipynb', 'hello')
+hello = nb_as_module.colab.as_module('hello.ipynb', 'hello')
 
 # Run a function from the module.
 hello.hello()

@@ -1,3 +1,3 @@
 from nb_as_module.nb_as_module import *
 
-__version__ = '0.2.1'  # breaking.feature.fix
+__version__ = '0.2.2'  # breaking.feature.fix

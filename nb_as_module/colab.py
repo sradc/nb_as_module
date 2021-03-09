@@ -17,7 +17,7 @@ print(list_of_notebooks)
 #> ['hello.ipynb']
 
 # Load one of the notebooks in the list, as a module:
-hello = as_module('hello.ipynb', 'hello')
+hello = nb_as_module.colab.as_module('hello.ipynb', 'hello')
 
 # Run a function in the module.
 hello.hello()
