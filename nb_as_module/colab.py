@@ -8,20 +8,20 @@ E.g.
 import nb_as_module.colab
 
 # Mount Google Drive, where Colab notebooks are saved.
+# (Note you will be asked for permission for access here.)
 nb_as_module.colab.mount_drive()
 
 # Get a list of your notebooks:
 list_of_notebooks = nb_as_module.colab.list_nbs()
 print(list_of_notebooks)
-# >> ['hello.ipynb']
+#> ['hello.ipynb']
 
 # Load one of the notebooks in the list, as a module:
 hello = as_module('hello.ipynb', 'hello')
 
 # Run a function in the module.
 hello.hello()
-# >> Hello, world.
-
+#> Hello, world.
 """
 import pathlib
 from google.colab import drive
