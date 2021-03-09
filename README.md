@@ -24,7 +24,7 @@ To install in Google Colab, run in a cell: `!pip install nb_as_module`
 import nb_as_module.colab
 
 # Mount Google Drive, where Colab notebooks are saved.
-# (Note you will be asked permission for access here.)
+# Note you will be asked permission for access here.
 nb_as_module.colab.mount_drive()
 
 # Get a list of your notebooks:
@@ -32,7 +32,7 @@ list_of_notebooks = nb_as_module.colab.list_nbs()
 print(list_of_notebooks)
 #> ['hello.ipynb', ...]
 
-# Load one of the notebooks in the list, as a module:
+# Load one of the notebooks in the list as a module:
 hello = nb_as_module.colab.as_module('hello.ipynb', 'hello')
 
 # Run a function from the module.
