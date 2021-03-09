@@ -8,7 +8,7 @@ E.g.
 import nb_as_module.colab
 
 # Mount Google Drive, where Colab notebooks are saved.
-# (Note you will be asked for permission for access here.)
+# (Note you will be asked permission for access here.)
 nb_as_module.colab.mount_drive()
 
 # Get a list of your notebooks:
